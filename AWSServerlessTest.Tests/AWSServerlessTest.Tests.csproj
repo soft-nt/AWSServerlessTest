@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp1.0</TargetFramework>
@@ -22,8 +22,8 @@
     <PackageReference Include="Amazon.Lambda.TestUtilities" Version="1.0.0" />
     <PackageReference Include="Amazon.Lambda.APIGatewayEvents" Version="1.1.0" />
 
-    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="1.0.0" />
-    <PackageReference Include="AWSSDK.Extensions.NETCore.Setup" Version="3.3.0.3" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="1.1.2" />
+    <PackageReference Include="AWSSDK.Extensions.NETCore.Setup" Version="3.3.1" />
 
     <PackageReference Include="xunit" Version="2.2.0" />
 
@@ -33,6 +33,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AWSServerlessTest\AWSServerlessTest.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{82a7f48d-3b50-4b1e-b82e-3ada8210c358}" />
   </ItemGroup>
 
 </Project>
